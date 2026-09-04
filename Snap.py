@@ -15,19 +15,19 @@ def Vdestroy():
 SHURI = Card("Shuri", 4,3,"double the power of the next card you play on this location")
 def doubler(): 
 STICK = Card("Stick",4,3,"add this card's power to your next card")
-def lend():
 ABS = Card("Absorbing Man",4,5,"copy the text of the last card you played")
-def Acopy():
+def Acopy(): 
 SSPIDERMAN = Card("SSpiderman",4,7,"Add this card's power to your lowest cost card here and use its action again, then remove this card")
 def SScopy():
+#these two cards should be easy once i define their calls
 BP = Card("Black Panther",5,5,"Double this card's current power")
-def Panther2():
+def Panther2(): self.power = self.power*2
 NIMROD = Card("Nimrod",5,6,"When this is destroyed, add a nimrod with the same power to the other locations")
 #Card doesn't have a method???
 ZOLA = Card("Arnim Zola",6,0,"destroy 1 card, then copy it to the other locations and use its action")
-def Zclone():
+def Zclone(): 
 TASKMASTER = Card("Taskmaster",6,0,"This card's power is set to the power of your last played card")
-def tasks():
+def tasks(): self.power = last_card.power
 #give the actions actual methods
 
 DECK = [NICO, CARNAGE, MAGIK, VENOM, SHURI, STICK, ABS, SSPIDERMAN, BP, NIMROD, ZOLA, TASKMASTER]
@@ -38,12 +38,15 @@ L3 = []
 TURN = 1
 TURNCOUNT = 6
 HAND = []
-
-def play(self, card, location):
-    
-
-    location_check(play.location)
-    if location_
+Playlist = []
+last_card = Playlist[-1]
+def playstart
+def playcard(self, card, location):
+    Playlist.append(self.card): 
+    if last_card = STICK
+        self.card.power= self.card.power + last_card.power
+    self.location.append(self.card)
+# location part should require an input and failsafe
     
 def drawcard(self):
     #take from DECK and give to HAND
